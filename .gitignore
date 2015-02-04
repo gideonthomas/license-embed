@@ -1,0 +1,10 @@
+.DS_Store
+
+XMP-Toolkit/samples/target/
+XMP-Toolkit/samples/build/cmake/*/build/
+XMP-Toolkit/samples/build/cmake/*/build_x64/
+XMP-Toolkit/samples/build/xcode/
+
+XMP-Toolkit/tools/
+
+XMP-Toolkit/**/xcode/
