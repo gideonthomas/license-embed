@@ -15,9 +15,8 @@ To use the library, first you have to build Adobe's XMP Toolkit.
 ### Mac OSX - Build XMP Toolkit
 1) First install the [cmake](http://www.cmake.org/download/) utility for Mac OSX. You will need both the application and the command line interface tool.
 
-To install the CLI tool:
+To install the CLI tool using Homebrew:
 ```
-$ brew update
 $ brew install cmake
 ```
 
