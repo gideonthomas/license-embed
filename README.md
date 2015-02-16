@@ -20,13 +20,13 @@ To install the CLI tool using Homebrew:
 $ brew install cmake
 ```
 
-Then, place the CMake.app file into the `XMP-Toolkit/tools/cmake` folder (create it if it does not exist).
+Then, place the CMake.app file into the `XMP-Toolkit/tools/cmake/bin` folder (create it if it does not exist).
 
 2) Run the shell script `XMP-Toolkit/build/GenerateXMPToolkitSDK_mac.sh` and choose the appropriate platform for installation (a Mac-based build). You will most likely want to generate a "static" version of the library.
 
 3) Open the generated project file in XCode. The file will be located in a path similar to `XMP-Toolkit/build/xcode/static/intel/XMPSDKToolkitSDK.xcodeproj`.
 
-4) In the menu in XCode, select <b>Product > Build</b>. Ensure that the build was successful.
+4) In the menu in XCode, select <b>Product > Build</b>. Ensure that the build was successful (you might have to change the Base SDK to Mac 10.9 or less).
 
 
 Now that you have built the Toolkit, you need to build the library itself.
@@ -34,12 +34,12 @@ Now that you have built the Toolkit, you need to build the library itself.
 ### Mac OSX - Build license-embed library
 1) Run the shell script `XMP-Toolkit/samples/build/GenerateXMPToolkitSDK_mac.sh` and choose the appropriate platform (Mac OSX).
 
-2) Open the generated project file in XCode. The file will be located in a path similar to `XMP-Toolkit/samples/build/intel/macintosh/XMPSDKToolkitSample.xcodeproj`
+2) Open the generated project file in XCode. The file will be located in a path similar to `XMP-Toolkit/samples/build/xcode/intel/XMPSDKToolkitSample.xcodeproj`
 
-3) In the menu in XCode, select <b>Product > Build</b>. Ensure that the build was successful.
+3) In the menu in XCode, select <b>Product > Build</b>. Ensure that the build was successful (you might have to change the Base SDK to Mac 10.9 or less).
 
 
-The library should now be ready to use. It will be located int the `XMP-Toolkit/samples/target` folder.
+The library should now be ready to use. It will be located int the `XMP-Toolkit/samples/target/macintosh/intel/Debug` folder.
 
 Simply run the MyModifyXMP file and provide a pathname and follow the instructions.
 ```
