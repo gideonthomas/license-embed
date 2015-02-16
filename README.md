@@ -13,11 +13,18 @@ $ git clone https://github.com/gideonthomas/license-embed.git
 To use the library, first you have to build Adobe's XMP Toolkit.
 
 ### Mac OSX - Build XMP Toolkit
-1) First install the [cmake](http://www.cmake.org/download/) utility for Mac OSX and place the CMake.app file into the `XMP-Toolkit/tools/cmake` folder (create it if it does not exist).
+1) First install the [cmake](http://www.cmake.org/download/) utility for Mac OSX. You will need both the application and the command line interface tool.
+
+To install the CLI tool using Homebrew:
+```
+$ brew install cmake
+```
+
+Then, place the CMake.app file into the `XMP-Toolkit/tools/cmake` folder (create it if it does not exist).
 
 2) Run the shell script `XMP-Toolkit/build/GenerateXMPToolkitSDK_mac.sh` and choose the appropriate platform for installation (a Mac-based build). You will most likely want to generate a "static" version of the library.
 
-3) Open the generated project file in XCode. The file will be located in a path similar to `XMP-Toolkit/build/static/intel/XMPSDKToolkitSDK.xcodeproj`.
+3) Open the generated project file in XCode. The file will be located in a path similar to `XMP-Toolkit/build/xcode/static/intel/XMPSDKToolkitSDK.xcodeproj`.
 
 4) In the menu in XCode, select <b>Product > Build</b>. Ensure that the build was successful.
 
